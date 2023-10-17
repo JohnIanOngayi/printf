@@ -11,7 +11,10 @@ int print_str(char *str)
 	len = 0;
 
 	if (str == NULL)
+	{
 		str = "";
+		return (-1);
+	}
 	while (*str != '\0')
 	{
 		_putchar(*str);
