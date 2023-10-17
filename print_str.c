@@ -13,7 +13,6 @@ int print_str(char *str)
 	if (str == NULL)
 	{
 		str = "";
-		return (-1);
 	}
 		str = "";
 	while (*str != '\0')
