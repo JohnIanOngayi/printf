@@ -21,6 +21,7 @@ int print_str(char *str)
 		{
 			_putchar(*str);
 			++len;
+			++str;
 		}
 		else
 		{
