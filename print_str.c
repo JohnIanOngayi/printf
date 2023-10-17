@@ -9,6 +9,9 @@ int print_str(char *str)
 	int len;
 
 	len = 0;
+
+	if (str == NULL)
+		str = "";
 	while (*str != '\0')
 	{
 		_putchar(*str);
