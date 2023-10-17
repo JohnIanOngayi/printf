@@ -15,12 +15,15 @@ int print_rot13(char *a)
 	rot_len = 0;
 	for (i = 0; a[i] != '\0'; i++)
 	{
-		for (j = 0; j < 52; j++)
+		if ((a[i] >= 'A' && a[i] <= 'Z') || (a[i] >= 'a' && a[i] <= 'z'))
 		{
-			if (a[i] == def[j])
+			for (j = 0; j < 52; j++)
 			{
-				a[i] = rot[j];
-				break;
+				if (a[i] == def[j])
+				{
+					a[i] = rot[j];
+					break;
+				}
 			}
 		}
 	}
