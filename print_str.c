@@ -17,25 +17,9 @@ int print_str(char *str)
 
 	while (*str != '\0')
 	{
-		if (*str >= 32 && *str < 127)
-		{
-			_putchar(*str);
-			++len;
-			++str;
-		}
-		else
-		{
-			_putchar('\\');
-			_putchar('x');
-			if (*str < 16)
-			{
-				_putchar('0');
-				len++;
-			}
-			len += 2;
-			len += print_HEX(*str);
-		}
-		str++;
+		_putchar(*str);
+		++len;
+		++str;
 	}
 	return (len);
 }
