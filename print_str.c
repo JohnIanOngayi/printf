@@ -14,7 +14,7 @@ int print_str(char *str)
 	{
 		str = "";
 	}
-		str = "";
+
 	while (*str != '\0')
 	{
 		_putchar(*str);
