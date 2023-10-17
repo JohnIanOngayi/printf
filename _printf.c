@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdarg.h>
 /**
  * _printf - emulates printf
  * @format: string containing format specifiers
@@ -12,9 +14,13 @@ int _printf(const char *format, ...)
 	bool error;
 	int result;
 
+	if (!format || (format[0] == '%' && !format[1]))
+		return (-1);
+
 	va_start(args, format);
 	count = 0;
 	error = false;
+
 	while (*format != '\0')
 	{
 		if (*format == '%')
