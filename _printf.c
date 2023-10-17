@@ -1,7 +1,5 @@
 #include "main.h"
 #include <stdbool.h>
-#include <stdio.h>
-#include <stdarg.h>
 /**
  * _printf - emulates printf
  * @format: string containing format specifiers
