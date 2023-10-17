@@ -1,0 +1,63 @@
+.TH _printf (3) "15/10/2023" "1.0" "custom _printf manual"
+
+.SH NAME
+_printf \- emulates limitedly the standard C printf
+
+.SH SYNOPSIS
+.B _printf
+.RB [FORMAT [ARGUMENT]]
+.RB [OPTION]
+
+.P
+.BR int _printf(const char *format, ...
+.BR ...)
+
+.SH DESCRIPTION
+.B _printf
+emulates stdio printf by printing ARGUMENT(s) according to FORMAT, or execute according to option:
+
+.SH FORMAT
+.TP
+.B \%c
+prints a single char
+.TP
+.B \%S
+prints a string
+.TP
+.B \%%
+prints a single percentage sign
+.TP
+.B \%i
+prints a signed integer
+.TP
+.B \%d
+prints a signed integer
+.TP
+.B \%u
+prints an unsigned integer
+.TP
+.B \%o
+prints an octal value
+.TP
+.B \%x
+prints a lowercase hexadecimal value
+.TP
+.B \%X
+prints an uppercase hexadecimal value
+.TP
+.B \%r
+prints a string in reverse
+.TP
+.B \%R
+prints an argument encoded in ROT13
+.TP
+.B \%0
+prints a NULL string
+
+.SH RETURN VALUE
+
+On success, _printf returns the number of printed characters. If formats is error or NULL returns -1
+
+.SH AUTHORS
+
+written by JohnIan Ong'ayi and Eunice Wahito.
