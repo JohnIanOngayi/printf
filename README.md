@@ -26,7 +26,7 @@ This repository contains all the files to implement a custom printf function tha
 
 **A brief description of what is contained in the files in this repository include:-**
 
-### [_printf.c]()
+### [_printf.c](https://github.com/JohnIanOngayi/printf/blob/main/_printf.c)
 
 - A function that produces the output according to a format
 - Prototype:
@@ -37,24 +37,13 @@ int _printf(const char *format, ...);
 
 ----
 
-### [_putchar.c]()
+### [_putchar.c](https://github.com/JohnIanOngayi/printf/blob/main/_putchar.c)
 
 - A function that implements the standard putchar function
 - Prototype:
 
 ```c
 int _putchar(char c);
-```
-
-----
-
-### [_puts.c]()
-
-- A function that implements the standard puts function
-- Prototype:
-
-```c
-int _puts(char *str);
 ```
 
 ----
