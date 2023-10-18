@@ -48,7 +48,7 @@ int _putchar(char c);
 
 ----
 
-### [print_num.c]()
+### [print_num.c](https://github.com/JohnIanOngayi/printf/blob/main/print_num.c)
 
 - A function that prints a number in its octal equivalent
 - Prototype:
@@ -59,7 +59,7 @@ int print_num(int num, int base);
 
 ----
 
-### [printu_int.c]()
+### [print_uns.c](https://github.com/JohnIanOngayi/printf/blob/main/print_uns.c)
 
 - A function that prints an unsigned integer
 - Prototype:
@@ -70,7 +70,7 @@ int print_Unsigned(unsigned int num);
 
 ----
 
-### [print_ROT13.c]()
+### [print_ROT13.c](https://github.com/JohnIanOngayi/printf/blob/main/print_ROT13.c)
 
 - A function that prints a string in 1337 encoding
 - Prototype:
