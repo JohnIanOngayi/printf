@@ -16,6 +16,7 @@ This repository contains all the files to implement a custom printf function tha
 |[printu_int.c]()|prints an unsigned int|
 |[print_ROT13.c]()|encodes in ROT13|
 |[print_rev.c]()|prints a string in reverse|
+|[man_3_printf.1]()|a manpage to _printf|
 
 ### Contributors
 
