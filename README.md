@@ -81,13 +81,46 @@ int print_rot13(char *a);
 
 ----
 
-### [print_rev.c]()
+### [print_rev.c](https://github.com/JohnIanOngayi/printf/blob/main/print_rev.c)
 
 - A function that prints a string in reverse
 - Prototype:
 
 ```c
 int print_rev(char *str);
+```
+
+----
+
+### [print_S.c](https://github.com/JohnIanOngayi/printf/blob/main/print_S.c)
+
+- Implements C standard snprintf
+- Prototype:
+
+```c
+int print_custom(char *str);
+```
+
+----
+
+### [print_HEX.c](https://github.com/JohnIanOngayi/printf/blob/main/print_HEX.c)
+
+- Prints uppercase hexadecimal digits
+- Prototype:
+
+```c
+int print_HEX(long int num, int base);
+```
+
+----
+
+### [specifier.c](https://github.com/JohnIanOngayi/printf/blob/main/specifier.c)
+
+- Relates specifier to function
+- Prototype:
+
+```c
+int spec(char specifier, va_list args)
 ```
 
 ----
